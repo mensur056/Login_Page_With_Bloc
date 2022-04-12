@@ -26,9 +26,7 @@ class _LoginScreenState extends State<LoginScreen> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              const SizedBox(
-                height: 200,
-              ),
+              Image.asset('assets/images/ic_profile.png'),
               TextField(
                   decoration: InputDecoration(
                       border: const OutlineInputBorder(), labelText: userName)),
