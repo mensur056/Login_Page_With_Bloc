@@ -26,7 +26,10 @@ class _LoginScreenState extends State<LoginScreen> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Image.asset('assets/images/ic_profile.png'),
+              Padding(
+                padding: const EdgeInsets.all(40.0),
+                child: Image.asset('assets/images/ic_profile.png'),
+              ),
               TextField(
                   decoration: InputDecoration(
                       border: const OutlineInputBorder(), labelText: userName)),
