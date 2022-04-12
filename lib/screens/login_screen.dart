@@ -47,7 +47,11 @@ class _LoginScreenState extends State<LoginScreen> {
                 onPressed: () {},
                 child: Padding(
                   padding: const EdgeInsets.all(20.0),
-                  child: Center(child: Text(loginText)),
+                  child: Center(
+                      child: Text(
+                    loginText,
+                    style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                  )),
                 ),
               )
             ],
