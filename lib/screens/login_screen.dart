@@ -9,6 +9,8 @@ class LoginScreen extends StatefulWidget {
 
 class _LoginScreenState extends State<LoginScreen> {
   final String loginText = 'Log in';
+  final String userName = 'Username';
+  final String password = 'Password';
 
   @override
   Widget build(BuildContext context) {
@@ -17,18 +19,38 @@ class _LoginScreenState extends State<LoginScreen> {
         backgroundColor: Colors.white,
         elevation: 0,
       ),
+      backgroundColor: Colors.white,
       body: SingleChildScrollView(
-        child: Column(
-          children: [
-            const TextField(
-                decoration: InputDecoration(border: OutlineInputBorder())),
-            const TextField(
-                decoration: InputDecoration(border: OutlineInputBorder())),
-            ElevatedButton(
-              onPressed: () {},
-              child: Text(loginText),
-            )
-          ],
+        child: Padding(
+          padding: const EdgeInsets.only(left: 10.0, right: 10),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              const SizedBox(
+                height: 200,
+              ),
+              TextField(
+                  decoration: InputDecoration(
+                      border: const OutlineInputBorder(), labelText: userName)),
+              const SizedBox(
+                height: 10,
+              ),
+              TextField(
+                decoration: InputDecoration(
+                    border: const OutlineInputBorder(), labelText: password),
+              ),
+              const SizedBox(
+                height: 20,
+              ),
+              ElevatedButton(
+                onPressed: () {},
+                child: Padding(
+                  padding: const EdgeInsets.all(20.0),
+                  child: Center(child: Text(loginText)),
+                ),
+              )
+            ],
+          ),
         ),
       ),
     );
