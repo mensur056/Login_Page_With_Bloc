@@ -9,7 +9,7 @@ class LoginScreen extends StatefulWidget {
 
 class _LoginScreenState extends State<LoginScreen> {
   final String loginText = 'Log in';
-  final String userName = 'Username';
+  final String username = 'Username';
   final String password = 'Password';
 
   @override
@@ -32,7 +32,7 @@ class _LoginScreenState extends State<LoginScreen> {
               ),
               TextField(
                   decoration: InputDecoration(
-                      border: const OutlineInputBorder(), labelText: userName)),
+                      border: const OutlineInputBorder(), labelText: username)),
               const SizedBox(
                 height: 10,
               ),
